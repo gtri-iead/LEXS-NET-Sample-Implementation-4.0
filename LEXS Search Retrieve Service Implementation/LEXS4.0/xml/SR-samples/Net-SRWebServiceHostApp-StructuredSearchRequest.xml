@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doStructuredSearchRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ulex.gov/searchretrieve/2.0">
+  <StructuredSearchRequestMessage xmlns="http://ulex.gov/ulex/2.0">
+    <SRMessageMetadata>
+      <ULEXFrameworkVersionText>2.0</ULEXFrameworkVersionText>
+      <ULEXImplementation>
+        <ULEXImplementationVersionText>4.0</ULEXImplementationVersionText>
+        <ULEXImplementationName>LEXS</ULEXImplementationName>
+      </ULEXImplementation>
+      <MessageDateTime>2012-11-02T17:57:21.456Z</MessageDateTime>
+      <MessageID xmlns="http://www.w3.org/2005/08/addressing">272</MessageID>
+      <MessageOriginMetadata>
+        <SystemIdentifier xmlns="http://lexs.gov/lexs/4.0">
+          <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">ATLANTA PD</OrganizationName>
+          <SystemID>APD123</SystemID>
+        </SystemIdentifier>
+        <SystemContact xmlns="http://lexs.gov/lexs/4.0">
+          <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">John</PersonGivenName>
+          <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+          <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Doe</PersonSurName>
+          <PersonFullName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+          <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+            <FullTelephoneNumber>
+              <TelephoneNumberFullID>404-555-6677</TelephoneNumberFullID>
+              <TelephoneSuffixID xsi:nil="true" />
+            </FullTelephoneNumber>
+          </ContactTelephoneNumber>
+        </SystemContact>
+      </MessageOriginMetadata>
+      <MessageDestinationIdentifier xmlns="http://lexs.gov/lexs/4.0">
+        <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">N-DEx</OrganizationName>
+        <SystemID>N-DEx</SystemID>
+      </MessageDestinationIdentifier>
+      <SRMessageMetadataDomainAttribute>
+        <AttributeName>gfipm:ext:user:NDEx:PurposeCode</AttributeName>
+        <AttributeValueText>C</AttributeValueText>
+        <DomainName>NDEX</DomainName>
+      </SRMessageMetadataDomainAttribute>
+      <SRMessageMetadataDomainAttribute>
+        <AttributeName>gfipm:ext:user:NDEx:ReasonText</AttributeName>
+        <AttributeValueText>Test Search</AttributeValueText>
+        <DomainName>NDEX</DomainName>
+      </SRMessageMetadataDomainAttribute>
+    </SRMessageMetadata>
+    <UserAssertion xmlns="http://lexs.gov/lexs/4.0">
+      <UserID>JD53</UserID>
+      <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">John</PersonGivenName>
+      <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Doe</PersonSurName>
+      <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+        <FullTelephoneNumber>
+          <TelephoneNumberFullID>404-555-6677</TelephoneNumberFullID>
+          <TelephoneSuffixID xsi:nil="true" />
+        </FullTelephoneNumber>
+      </ContactTelephoneNumber>
+      <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">ATLANTA PD</OrganizationName>
+      <UserAssertionDomainAttribute>
+        <AttributeName xmlns="http://ulex.gov/ulex/2.0">gfipm:2.0:user:NDExPrivilegeIndicator</AttributeName>
+        <AttributeValueText xmlns="http://ulex.gov/ulex/2.0">True</AttributeValueText>
+        <DomainName xmlns="http://ulex.gov/ulex/2.0">NDEX</DomainName>
+      </UserAssertionDomainAttribute>
+    </UserAssertion>
+    <SearchRequestMetadata>
+      <RequestedDataCategoryCode xmlns="http://lexs.gov/lexs/4.0">All</RequestedDataCategoryCode>
+      <MaxItemMatchesNumeric>100</MaxItemMatchesNumeric>
+      <StructuredPayloadsRequestedCode>all</StructuredPayloadsRequestedCode>
+    </SearchRequestMetadata>
+    <StructuredQuery>
+      <DigestQueryStatement>
+        <DigestQueryField xmlns="http://lexs.gov/lexs/4.0">
+          <EntityPerson xmlns="http://lexs.gov/digest/4.0">
+            <Person>
+              <PersonDeathDate xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+              <PersonDescriptionText xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+              <PersonLivingIndicator xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+              <PersonName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+              <PersonPrimaryLanguage xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+              <PersonSexCode xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0" />
+              <PersonSSNIdentification xmlns="http://niem.gov/niem/niem-core/2.0">
+                <IdentificationID>333-44-5555</IdentificationID>
+                <IdentificationSourceText xsi:nil="true" />
+                <IdentificationStatus xsi:nil="true" />
+              </PersonSSNIdentification>
+              <PersonAugmentation xsi:nil="true" />
+            </Person>
+          </EntityPerson>
+        </DigestQueryField>
+        <QueryMatchCode>exact</QueryMatchCode>
+      </DigestQueryStatement>
+    </StructuredQuery>
+  </StructuredSearchRequestMessage>
+</doStructuredSearchRequest>

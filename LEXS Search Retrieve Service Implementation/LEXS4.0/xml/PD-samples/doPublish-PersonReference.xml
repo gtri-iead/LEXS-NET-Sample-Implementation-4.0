@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ulexpd:doPublish 
+    xmlns:new="http://somewhere.gov/new-community"
+    xmlns:ulex="http://ulex.gov/ulex/2.0" 
+    xmlns:ulexpd="http://ulex.gov/publishdiscover/2.0"    
+    xmlns:ulexcodes="http://ulex.gov/codes/2.0"    
+    xmlns:ulexlib="http://ulex.gov/library/2.0"
+    
+    xmlns:j="http://niem.gov/niem/domains/jxdm/4.1"
+    xmlns:nc="http://niem.gov/niem/niem-core/2.0"
+    xmlns:s="http://niem.gov/niem/structures/2.0"
+    xmlns:lexs="http://lexs.gov/lexs/4.0" 
+    xmlns:lexsdigest="http://lexs.gov/digest/4.0"    
+    
+    xmlns:em="http://niem.gov/niem/domains/emergencyManagement/2.1"
+    xmlns:im="http://niem.gov/niem/domains/immigration/2.1"    
+    xmlns:intel="http://niem.gov/niem/domains/intelligence/2.1" 
+    xmlns:fs="http://niem.gov/niem/domains/familyServices/2.1"
+    xmlns:m="http://niem.gov/niem/domains/maritime/2.1"
+    xmlns:scr="http://niem.gov/niem/domains/screening/2.1"
+    xmlns:wsa="http://www.w3.org/2005/08/addressing"
+    
+    xmlns:icism-metadata="http://niem.gov/niem/icism/2.0"
+    xmlns:icism="urn:us:gov:ic:ism:v2"
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ulex.gov/publishdiscover/2.0 ../../xsd/ulex.gov/ulex-publish-discover/2.0/ulex-publish-discover.xsd">
+    
+    <ulex:PublishMessageContainer>
+        <ulex:PublishMessage>
+            <!--==================== Package ====================-->
+            <ulex:DataItemPackage>
+                <ulex:PackageMetadata>
+                    <ulex:DataItemID>12345678</ulex:DataItemID>
+                    <ulex:DataItemCompleteIndicator>true</ulex:DataItemCompleteIndicator>
+                    <lexs:DataItemContact>
+                        <!-- Data Item Contact is the person(s) to contact for more information about the data item -->
+                        <nc:PersonGivenName>Joe</nc:PersonGivenName>
+                        <nc:PersonMiddleName>James</nc:PersonMiddleName>
+                        <nc:PersonSurName>Boss</nc:PersonSurName>
+                        <nc:PersonFullName>Joe James Boss</nc:PersonFullName>
+                        <nc:ContactEmailID>Joe@gbi.gov</nc:ContactEmailID>
+                        <nc:ContactTelephoneNumber>
+                            <nc:NANPTelephoneNumber>
+                                <nc:TelephoneAreaCodeID>111</nc:TelephoneAreaCodeID>
+                                <nc:TelephoneExchangeID>555</nc:TelephoneExchangeID>
+                                <nc:TelephoneLineID>1212</nc:TelephoneLineID>
+                                <nc:TelephoneSuffixID>14</nc:TelephoneSuffixID>
+                            </nc:NANPTelephoneNumber>
+                        </nc:ContactTelephoneNumber>
+                        <nc:ContactFaxNumber>
+                            <nc:InternationalTelephoneNumber>
+                                <nc:TelephoneCountryCodeID>01</nc:TelephoneCountryCodeID>
+                                <nc:TelephoneNumberID>111-555-1212</nc:TelephoneNumberID>
+                            </nc:InternationalTelephoneNumber>
+                        </nc:ContactFaxNumber>
+                        <nc:ContactPagerNumber>
+                            <nc:FullTelephoneNumber>
+                                <nc:TelephoneNumberFullID>111-555-1214</nc:TelephoneNumberFullID>
+                                <nc:TelephoneSuffixID>12</nc:TelephoneSuffixID>
+                            </nc:FullTelephoneNumber>
+                        </nc:ContactPagerNumber>
+                        <nc:ContactMobileTelephoneNumber>
+                            <nc:FullTelephoneNumber>
+                                <nc:TelephoneNumberFullID>111-555-1215</nc:TelephoneNumberFullID>
+                                <nc:TelephoneSuffixID>1215</nc:TelephoneSuffixID>
+                            </nc:FullTelephoneNumber>
+                        </nc:ContactMobileTelephoneNumber>
+                        <nc:OrganizationName>GBI - Records Bureau</nc:OrganizationName>
+                        <lexs:DataContactDomainAttribute>
+                            <ulex:AttributeName>ContactRole</ulex:AttributeName>
+                            <ulex:AttributeValueText>Arresting Officer</ulex:AttributeValueText>
+                            <ulex:DomainName>GBI</ulex:DomainName>
+                        </lexs:DataContactDomainAttribute>                
+                    </lexs:DataItemContact>
+                    <ulex:DataItemDate>1967-08-13</ulex:DataItemDate>
+                    <ulex:DataItemGroupAggregationIdentifier>
+                        <ulex:DataItemGroupID>39343</ulex:DataItemGroupID>
+                        <ulex:DataItemGroupCategoryText>Test Group</ulex:DataItemGroupCategoryText>
+                        <ulex:DataItemGroupReasonText>Similar Elements</ulex:DataItemGroupReasonText>
+                        <ulex:DataItemGroupOriginatorID>Group1</ulex:DataItemGroupOriginatorID>
+                    </ulex:DataItemGroupAggregationIdentifier>
+                    <ulex:DataItemGroupCorrelationIdentifier>
+                        <ulex:DataItemGroupID>22134</ulex:DataItemGroupID>
+                        <ulex:DataItemGroupCategoryText>Test Group</ulex:DataItemGroupCategoryText>
+                        <ulex:DataItemGroupReasonText>Similar elements</ulex:DataItemGroupReasonText>
+                        <ulex:DataItemGroupOriginatorID>Group 2</ulex:DataItemGroupOriginatorID>
+                    </ulex:DataItemGroupCorrelationIdentifier>
+                    <ulex:DataItemULEXImplementation>
+                        <ulex:ULEXImplementationVersionText>2.0</ulex:ULEXImplementationVersionText>
+                        <ulex:ULEXImplementationName>LEXS</ulex:ULEXImplementationName>
+                    </ulex:DataItemULEXImplementation>
+                    <ulex:DataItemReferenceID>12345678</ulex:DataItemReferenceID>
+                    <ulex:DataItemPublishInstructionCode>Insert</ulex:DataItemPublishInstructionCode>
+                    <lexs:DataItemStatusText>Valid</lexs:DataItemStatusText>
+                    <ulex:DataOwnerMetadata>
+                        <lexs:DataOwnerIdentifier>
+                            <!-- uses OriginatingAgencyID here as a test -->
+                            <lexs:OriginatingAgencyID>ABC123</lexs:OriginatingAgencyID>
+                            <nc:OrganizationName>GBI</nc:OrganizationName>
+                            <lexs:SystemID>GBI RMS</lexs:SystemID>
+                        </lexs:DataOwnerIdentifier>
+                        <lexs:DataOwnerContact>
+                            <nc:PersonGivenName>Joe</nc:PersonGivenName>
+                            <nc:PersonMiddleName>James</nc:PersonMiddleName>
+                            <nc:PersonSurName>Boss</nc:PersonSurName>
+                            <nc:PersonFullName>Joe James Boss</nc:PersonFullName>
+                            <nc:ContactEmailID>Joe@gbi.gov</nc:ContactEmailID>
+                            <nc:ContactTelephoneNumber>
+                                <nc:NANPTelephoneNumber>
+                                    <nc:TelephoneAreaCodeID>111</nc:TelephoneAreaCodeID>
+                                    <nc:TelephoneExchangeID>555</nc:TelephoneExchangeID>
+                                    <nc:TelephoneLineID>1212</nc:TelephoneLineID>
+                                    <nc:TelephoneSuffixID>14</nc:TelephoneSuffixID>
+                                </nc:NANPTelephoneNumber>
+                            </nc:ContactTelephoneNumber>
+                            <nc:ContactFaxNumber>
+                                <nc:InternationalTelephoneNumber>
+                                    <nc:TelephoneCountryCodeID>01</nc:TelephoneCountryCodeID>
+                                    <nc:TelephoneNumberID>111-555-1212</nc:TelephoneNumberID>
+                                </nc:InternationalTelephoneNumber>
+                            </nc:ContactFaxNumber>
+                            <nc:ContactPagerNumber>
+                                <nc:FullTelephoneNumber>
+                                    <nc:TelephoneNumberFullID>111-555-1214</nc:TelephoneNumberFullID>
+                                    <nc:TelephoneSuffixID>12</nc:TelephoneSuffixID>
+                                </nc:FullTelephoneNumber>
+                            </nc:ContactPagerNumber>
+                            <nc:ContactMobileTelephoneNumber>
+                                <nc:FullTelephoneNumber>
+                                    <nc:TelephoneNumberFullID>111-555-1215</nc:TelephoneNumberFullID>
+                                    <nc:TelephoneSuffixID>1215</nc:TelephoneSuffixID>
+                                </nc:FullTelephoneNumber>
+                            </nc:ContactMobileTelephoneNumber>
+                            <nc:OrganizationName>GBI - Records Bureau</nc:OrganizationName>
+                            <lexs:DataContactDomainAttribute>
+                                <ulex:AttributeName>ContactRole</ulex:AttributeName>
+                                <ulex:AttributeValueText>RMS Manager</ulex:AttributeValueText>
+                                <ulex:DomainName>GBI</ulex:DomainName>
+                            </lexs:DataContactDomainAttribute>                            
+                        </lexs:DataOwnerContact>
+                        <ulex:DataOwnerMetadataDomainAttribute>
+                            <ulex:AttributeName>Division</ulex:AttributeName>
+                            <ulex:AttributeValueText>Cold Cases</ulex:AttributeValueText>
+                            <ulex:DomainName>GBI</ulex:DomainName>
+                        </ulex:DataOwnerMetadataDomainAttribute>
+                    </ulex:DataOwnerMetadata>
+                    <lexs:DisseminationCriteria>
+                        <lexs:DisseminationCriteriaDomainName>GBI</lexs:DisseminationCriteriaDomainName>
+                        <lexs:DisseminationCriteriaText>white</lexs:DisseminationCriteriaText>
+                    </lexs:DisseminationCriteria>
+                    <ulex:DataItemCategory>
+                        <ulex:DataItemCategoryText>Category text</ulex:DataItemCategoryText>
+                        <ulex:DataItemCategoryDescriptionText>Further description</ulex:DataItemCategoryDescriptionText>
+                    </ulex:DataItemCategory>
+                    <ulex:DataItemKeywordsText>Missing Person, Cocaine, Kidnap, Gang</ulex:DataItemKeywordsText>
+                    <ulex:PackageMetadataDomainAttribute>
+                        <ulex:AttributeName>GammaField</ulex:AttributeName>
+                        <ulex:AttributeValueText>11</ulex:AttributeValueText>
+                        <ulex:DomainName>GBI-RMS</ulex:DomainName>
+                    </ulex:PackageMetadataDomainAttribute>
+                    <lexs:DataItemICISMMetadata 
+                        icism:classification="U"
+                        icism:classifiedBy="USA"
+                        icism:nonICmarkings="DIST_STMT_A"/>                    
+                </ulex:PackageMetadata>
+                <lexs:Digest>
+                    <!--=======================  Associations  =======================-->
+                    <lexsdigest:Associations>
+                        
+                        <lexsdigest:Metadata s:id="meta1">
+                            <nc:CommentText>This is an Acquaintance-related comment</nc:CommentText>
+                        </lexsdigest:Metadata>
+                        <lexsdigest:Metadata s:id="meta2">
+                            <nc:CommentText>This is an ActivityInformation-related comment</nc:CommentText>
+                        </lexsdigest:Metadata>
+                        <lexsdigest:Metadata s:id="meta3">
+                            <nc:CommentText>Service call initiated dispatch to incident.</nc:CommentText>
+                        </lexsdigest:Metadata>
+                       
+                        <lexsdigest:PersonBirthLocationAssociation>
+                            <nc:AssociationBeginDate>
+                                <nc:DateTime>1967-08-13T14:20:00.0Z</nc:DateTime>
+                            </nc:AssociationBeginDate>
+                            <nc:AssociationEndDate>
+                                <nc:DateTime>1968-08-13T14:20:00.0Z</nc:DateTime>
+                            </nc:AssociationEndDate>
+                            <nc:PersonReference s:ref="Person4"/>
+                            <nc:LocationReference s:ref="Location1"/>
+                        </lexsdigest:PersonBirthLocationAssociation>
+                        <lexsdigest:PersonContactAssociation>
+                            <nc:AssociationBeginDate>
+                                <nc:Date>1968-11-03</nc:Date>
+                            </nc:AssociationBeginDate>
+                            <nc:AssociationEndDate>
+                                <nc:Date>1968-12-02</nc:Date>
+                            </nc:AssociationEndDate>
+                            <nc:PersonReference s:ref="Person1"></nc:PersonReference>
+                            <lexsdigest:ContactPersonReference s:ref="Person2"/>
+                            <lexsdigest:ContactPersonLanguage>
+                                <nc:LanguageCode>aaa</nc:LanguageCode>
+                            </lexsdigest:ContactPersonLanguage>
+                            <lexsdigest:ContactPersonLocationReference s:ref="Location1"/>
+                            <lexsdigest:ContactPersonEmailAddressReference s:ref="Email1"/>
+                            <lexsdigest:ContactPersonTelephoneNumberReference s:ref="TelNum1"/>
+                            <lexsdigest:ContactPersonRelationshipText>ex-roommate</lexsdigest:ContactPersonRelationshipText>
+                        </lexsdigest:PersonContactAssociation>
+                       
+                    </lexsdigest:Associations>
+                </lexs:Digest>
+            </ulex:DataItemPackage>
+        </ulex:PublishMessage>
+    </ulex:PublishMessageContainer>
+</ulexpd:doPublish>

@@ -1,0 +1,139 @@
+=================================================================
+== LEXS WCF (.Net) Web Service Sample Implementation           ==
+=================================================================
+
+
+Table of Contents:
+1. Introduction
+2. Architecture Overview
+3. References
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+1. INTRODUCTION
+
+This distribution contains sample implementations of LEXS Web 
+Services using the latest service oriented technologies under 
+windows Communications Foundation (WCF) application programming
+interface (API) in the .NET Framework. The sample implementation 
+includes a web service library, a console application to 
+self-host the service, a WCF library to host the service in IIS, 
+a console-based client, and a console-based contract and proxy 
+code generation application based on the Wscf.Blue open-source 
+project.
+
+The distribution includes Visual Studio 2012 solutions with 
+the service, client, and code generator organized as follows:
+
+-----------------------------------------------------------------
+LEXS Search-Retrieve Solution ..................................
+   LexsSearchRetrieveCommon - Shared code project ..............
+   LexsSearchRetrieveWebService - Web Service project ..........
+   LexsSRClientProxyApp - Client Proxy project .................
+   LexsSRWebServiceHost - WCF library for hosting in IIS .......
+   LexsSRWebServiceHostApp - Console app. for self-hosting .....
+   XmlSerializationUtils - XML serialization utilities .........
+
+-----------------------------------------------------------------
+
+In addition, it includes the following components:
+
+-----------------------------------------------------------------
+LEXS4.0 - includes the wsdl and schema files that define the 
+   data, message, and service contracts for the LEXS IEPD 
+   implemented. 
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+2. ARCHITECTURE OVERVIEW
+
+The LEXS WS was implemented using Visual Studio 2012 and the 
+.NET Framework version 4.0. The service and client proxy 
+components are built as independent projects and can be used 
+separately.
+
+
+2.1 WCF Service
+
+The web service was implemented as a WCF service library which
+results in a DLL that can be easily deployed. For this project, 
+code was first generated with the WscfGen application (from 
+the CodeGenerationTool solution) using the 
+GenerateServiceCode.bat file (see the GenerateServiceAndProxyCode 
+folder). The data and service contracts are included in the 
+LexsSearchRetrieveCommon project. The service implementation, 
+service (svc) and configuration (App.config) files are included 
+in the LexsSRWebServiceHost or LexsPDWebServiceHost project for 
+hosting in IIS. 
+
+
+2.2 WCF Client
+
+The client project includes the client code to generate the 
+proxy programmatically based on an endpoint address defined in
+the configuration file. This project references the service
+and data contracts defined in the LexsPublishDiscoverCommon or 
+LexsSearchRetrieveCommon projects.
+
+
+2.3 Hosting
+
+2.3.1 Hosting in IIS
+This WCF service is hosted in IIS 7. Create a new website in IIS 
+and use Visual Studio's Publish feature to deploy the web service 
+library into the website's folder. Publishing results in the 
+service DLL being copied (along with PDB files if in debug mode) 
+into the website's bin directory. Service (.svc) and Web.Config 
+files are also copied. Test the service using the following 
+(where the 8010 and 8020 port numbers are arbitrary number 
+assigned when creating the Search-Retrieve):
+
+http://localhost:8010/LEXSSearchRetrievePortType.svc
+
+or 
+
+http://localhost:8020/LEXSSearchRetrievePortType.svc
+
+
+2.3.2 Self-Hosting
+The solution includes the LexsPDWebServiceHostApp console 
+application project that when executed hosts the service. This 
+simpifies testing the client/service interaction.
+
+The service is availble at:
+http://localhost:8000/Lexs4SearchRetrieve
+
+
+
+2.4 Known Issues
+
+2.4.1 Mandatory generation of the xsi:nil
+The auto-generated code generates XML that includes xsi:nil="true" 
+for elements that do not contain any value whether an element was 
+included in the orginal XML or not. To eliminate that functionality 
+following code has to be added to the generated classes:
+
+DataOwnerIdentifierType.cs
+// Note: This is a manual modification to prevent NULL elements from being serialized
+public bool ShouldSerializeOrganizationName()
+{
+	return organizationNameField != null;
+}
+
+2.4.2 ConTesA test
+ConTesA fails generated xml. 
+For details see bug: https://iead.ittl.gtri.org/jira/browse/CONTESA-665 
+
+
+-----------------------------------------------------------------
+3.  REFERENCES
+
+a. Wscf.Blue
+   http://wscfblue.codeplex.com/
+b. Windows Communication Foundation is...
+   http://msdn.microsoft.com/en-us/netframework/aa663324.aspx
+c. WCF Service Publishing
+   http://msdn.microsoft.com/en-us/library/bb924407.aspx
+d. Deploying an Internet Information Services-Hosted WCF Service
+   http://msdn.microsoft.com/en-us/library/aa751792.aspx

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <doSearchResponse xmlns="http://ulex.gov/searchretrieve/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://ulex.gov/searchretrieve/2.0 ../../xsd/ulex.gov/ulex-search-retrieve/2.0/ulex-search-retrieve.xsd">
+         <SearchResponseMessage xmlns="http://ulex.gov/ulex/2.0">
+            <SRMessageMetadata>
+               <ULEXFrameworkVersionText>2.0</ULEXFrameworkVersionText>
+               <ULEXImplementation>
+                  <ULEXImplementationVersionText>4.0</ULEXImplementationVersionText>
+                  <ULEXImplementationName>LEXS</ULEXImplementationName>
+               </ULEXImplementation>
+               <MessageDateTime>2006-12-17T09:30:47Z</MessageDateTime>
+               <MessageID xmlns="http://www.w3.org/2005/08/addressing">uuid:d03bff59-7323-4f60-b080-fc2b1d873f0c</MessageID>
+               <RelatesTo xmlns="http://www.w3.org/2005/08/addressing">uuid:ab19b2f2-d64c-44c6-ab18-61dde2f25e6d</RelatesTo>
+               <MessageOriginMetadata>
+                  <SystemIdentifier xmlns="http://lexs.gov/lexs/4.0">
+                     <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">Hypothetical Organization E</OrganizationName>
+                     <SystemID>SysE</SystemID>
+                  </SystemIdentifier>
+                  <SystemContact xmlns="http://lexs.gov/lexs/4.0">
+                     <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">Jim</PersonGivenName>
+                     <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">West</PersonSurName>
+                     <PersonFullName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                        <FullTelephoneNumber>
+                           <TelephoneNumberFullID>770-555-1212</TelephoneNumberFullID>
+                           <TelephoneSuffixID xsi:nil="true"/>
+                        </FullTelephoneNumber>
+                     </ContactTelephoneNumber>
+                  </SystemContact>
+               </MessageOriginMetadata>
+               <MessageDestinationIdentifier xmlns="http://lexs.gov/lexs/4.0">
+                  <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">Hypothetical Organization F</OrganizationName>
+                  <SystemID>SysF</SystemID>
+               </MessageDestinationIdentifier>
+            </SRMessageMetadata>
+            <ResponseMetadata>
+               <ResultCode>Success</ResultCode>
+            </ResponseMetadata>
+            <SearchResponseMetadata>
+               <MaxItemMatchesRequestedNumeric>10</MaxItemMatchesRequestedNumeric>
+               <NumberItemMatchesText>2</NumberItemMatchesText>
+               <ServerLimitIndicator>false</ServerLimitIndicator>
+            </SearchResponseMetadata>
+            <SearchResultPackage>
+               <PackageMetadata>
+                  <DataItemID>12345678</DataItemID>
+                  <DataItemContact xmlns="http://lexs.gov/lexs/4.0">
+                     <PersonGivenName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Jackson</PersonSurName>
+                     <PersonFullName xmlns="http://niem.gov/niem/niem-core/2.0">David Jackson</PersonFullName>
+                     <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                        <FullTelephoneNumber>
+                           <TelephoneNumberFullID>333-444-5555 x6</TelephoneNumberFullID>
+                           <TelephoneSuffixID xsi:nil="true"/>
+                        </FullTelephoneNumber>
+                     </ContactTelephoneNumber>
+                     <DataContactDomainAttribute>
+                        <AttributeName xmlns="http://ulex.gov/ulex/2.0">ContactRole</AttributeName>
+                        <AttributeValueText xmlns="http://ulex.gov/ulex/2.0">Arresting Officer</AttributeValueText>
+                        <DomainName xmlns="http://ulex.gov/ulex/2.0">GBI</DomainName>
+                     </DataContactDomainAttribute>
+                  </DataItemContact>
+                  <DataItemDate>2006-12-13</DataItemDate>
+                  <DataItemULEXImplementation>
+                     <ULEXImplementationVersionText>4.0</ULEXImplementationVersionText>
+                     <ULEXImplementationName>LEXS</ULEXImplementationName>
+                  </DataItemULEXImplementation>
+                  <DataItemReferenceID>1912345678</DataItemReferenceID>
+                  <DataItemStatusText xmlns="http://lexs.gov/lexs/4.0">Closed_Case</DataItemStatusText>
+                  <DataOwnerMetadata>
+                     <DataOwnerIdentifier xmlns="http://lexs.gov/lexs/4.0">
+                        <OriginatingAgencyID>AA1234567</OriginatingAgencyID>
+                        <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">Hypothetical Agency A</OrganizationName>
+                        <SystemID>SysA</SystemID>
+                     </DataOwnerIdentifier>
+                     <DataOwnerContact xmlns="http://lexs.gov/lexs/4.0">
+                        <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">Will</PersonGivenName>
+                        <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Jones</PersonSurName>
+                        <PersonFullName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                           <FullTelephoneNumber>
+                              <TelephoneNumberFullID>111-222-3333</TelephoneNumberFullID>
+                              <TelephoneSuffixID xsi:nil="true"/>
+                           </FullTelephoneNumber>
+                        </ContactTelephoneNumber>
+                        <DataContactDomainAttribute>
+                           <AttributeName xmlns="http://ulex.gov/ulex/2.0">ContactRole</AttributeName>
+                           <AttributeValueText xmlns="http://ulex.gov/ulex/2.0">RMS Manager</AttributeValueText>
+                           <DomainName xmlns="http://ulex.gov/ulex/2.0">GBI</DomainName>
+                        </DataContactDomainAttribute>
+                     </DataOwnerContact>
+                  </DataOwnerMetadata>
+                  <DisseminationCriteria xmlns="http://lexs.gov/lexs/4.0">
+                     <DisseminationCriteriaDomainName>Test</DisseminationCriteriaDomainName>
+                     <DisseminationCriteriaText>white</DisseminationCriteriaText>
+                  </DisseminationCriteria>
+               </PackageMetadata>
+               <Digest xmlns="http://lexs.gov/lexs/4.0">
+                  <EntityPerson a:id="EPerson1" xmlns="http://lexs.gov/digest/4.0" xmlns:a="http://niem.gov/niem/structures/2.0">
+                     <Person a:id="Sub1">
+                        <PersonDeathDate xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonDescriptionText xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonLivingIndicator xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonName xmlns="http://niem.gov/niem/niem-core/2.0">
+                           <PersonNamePrefixText xsi:nil="true"/>
+                           <PersonGivenName a:id="EPerson1PGN">Tommy</PersonGivenName>
+                           <PersonSurName a:id="EPerson1PSN">Jones</PersonSurName>
+                           <PersonNameSuffixText xsi:nil="true"/>
+                           <PersonFullName xsi:nil="true"/>
+                        </PersonName>
+                        <PersonPrimaryLanguage xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonSexCode xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonSSNIdentification xmlns="http://niem.gov/niem/niem-core/2.0">
+                           <IdentificationID>333-44-5555</IdentificationID>
+                           <IdentificationSourceText xsi:nil="true"/>
+                           <IdentificationStatus xsi:nil="true"/>
+                        </PersonSSNIdentification>
+                        <PersonAugmentation xsi:nil="true"/>
+                     </Person>
+                  </EntityPerson>
+                  <Associations xsi:nil="true" xmlns="http://lexs.gov/digest/4.0"/>
+               </Digest>
+               <DataSubmitterMetadata>
+                  <SystemIdentifier xmlns="http://lexs.gov/lexs/4.0">
+                     <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">Hypothetical Organization C</OrganizationName>
+                     <SystemID>SysC</SystemID>
+                  </SystemIdentifier>
+                  <SystemContact xmlns="http://lexs.gov/lexs/4.0">
+                     <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">Michael</PersonGivenName>
+                     <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Park</PersonSurName>
+                     <PersonFullName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                        <NANPTelephoneNumber>
+                           <TelephoneAreaCodeID>202</TelephoneAreaCodeID>
+                           <TelephoneExchangeID>555</TelephoneExchangeID>
+                           <TelephoneLineID>1212</TelephoneLineID>
+                           <TelephoneSuffixID xsi:nil="true"/>
+                        </NANPTelephoneNumber>
+                     </ContactTelephoneNumber>
+                     <DataContactDomainAttribute>
+                        <AttributeName xmlns="http://ulex.gov/ulex/2.0">ContactRole</AttributeName>
+                        <AttributeValueText xmlns="http://ulex.gov/ulex/2.0">Data Center Operations</AttributeValueText>
+                        <DomainName xmlns="http://ulex.gov/ulex/2.0">GBI</DomainName>
+                     </DataContactDomainAttribute>
+                  </SystemContact>
+               </DataSubmitterMetadata>
+               <MatchDetails>
+                  <MatchObjectDetails>
+                     <MatchDigestEntityReference a:validatingObjectReference="EPerson1" xmlns:a="http://ulex.gov/library/2.0"/>
+                     <MatchDigestElementReference>
+                        <DigestObjectReference a:validatingObjectReference="EPerson1PGN" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                        <QueryMatchText>exact</QueryMatchText>
+                     </MatchDigestElementReference>
+                     <MatchDigestElementReference>
+                        <DigestObjectReference a:validatingObjectReference="EPerson1PSN" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                        <QueryMatchText>exact</QueryMatchText>
+                     </MatchDigestElementReference>
+                  </MatchObjectDetails>
+                  <StructuredQueryMatchScorePercent>1</StructuredQueryMatchScorePercent>
+               </MatchDetails>
+            </SearchResultPackage>
+            <SearchResultPackage>
+               <PackageMetadata>
+                  <DataItemID>12345679</DataItemID>
+                  <DataItemContact xmlns="http://lexs.gov/lexs/4.0">
+                     <PersonGivenName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Jackson</PersonSurName>
+                     <PersonFullName xmlns="http://niem.gov/niem/niem-core/2.0">David Jackson</PersonFullName>
+                     <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                        <FullTelephoneNumber>
+                           <TelephoneNumberFullID>333-444-5555 x6</TelephoneNumberFullID>
+                           <TelephoneSuffixID xsi:nil="true"/>
+                        </FullTelephoneNumber>
+                     </ContactTelephoneNumber>
+                  </DataItemContact>
+                  <DataItemDate>2006-12-13</DataItemDate>
+                  <DataItemReferenceID>1912345679</DataItemReferenceID>
+                  <DataItemStatusText xmlns="http://lexs.gov/lexs/4.0">Closed_Case</DataItemStatusText>
+                  <DataOwnerMetadata>
+                     <DataOwnerIdentifier xmlns="http://lexs.gov/lexs/4.0">
+                        <OriginatingAgencyID>DD1234567</OriginatingAgencyID>
+                        <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">Hypothetical Agency D</OrganizationName>
+                        <SystemID>SysD</SystemID>
+                     </DataOwnerIdentifier>
+                     <DataOwnerContact xmlns="http://lexs.gov/lexs/4.0">
+                        <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">Will</PersonGivenName>
+                        <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Dee</PersonSurName>
+                        <PersonFullName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                           <FullTelephoneNumber>
+                              <TelephoneNumberFullID>222-222-3333</TelephoneNumberFullID>
+                              <TelephoneSuffixID xsi:nil="true"/>
+                           </FullTelephoneNumber>
+                        </ContactTelephoneNumber>
+                     </DataOwnerContact>
+                  </DataOwnerMetadata>
+                  <DisseminationCriteria xmlns="http://lexs.gov/lexs/4.0">
+                     <DisseminationCriteriaDomainName>Test</DisseminationCriteriaDomainName>
+                     <DisseminationCriteriaText>white</DisseminationCriteriaText>
+                  </DisseminationCriteria>
+               </PackageMetadata>
+               <Digest xmlns="http://lexs.gov/lexs/4.0">
+                  <EntityPerson a:id="ESub2" xmlns="http://lexs.gov/digest/4.0" xmlns:a="http://niem.gov/niem/structures/2.0">
+                     <Person a:id="Sub2">
+                        <PersonDeathDate xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonDescriptionText xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonLivingIndicator xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonName xmlns="http://niem.gov/niem/niem-core/2.0">
+                           <PersonNamePrefixText xsi:nil="true"/>
+                           <PersonGivenName a:id="ESub2PGN">Tommy</PersonGivenName>
+                           <PersonMiddleName>Lee</PersonMiddleName>
+                           <PersonSurName a:id="ESub2PSN">Jones</PersonSurName>
+                           <PersonNameSuffixText xsi:nil="true"/>
+                           <PersonFullName xsi:nil="true"/>
+                        </PersonName>
+                        <PersonPrimaryLanguage xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonSexCode xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                        <PersonSSNIdentification xmlns="http://niem.gov/niem/niem-core/2.0">
+                           <IdentificationID>034-78-6532</IdentificationID>
+                           <IdentificationSourceText xsi:nil="true"/>
+                           <IdentificationStatus xsi:nil="true"/>
+                        </PersonSSNIdentification>
+                        <PersonAugmentation xsi:nil="true"/>
+                     </Person>
+                  </EntityPerson>
+                  <Associations xsi:nil="true" xmlns="http://lexs.gov/digest/4.0"/>
+               </Digest>
+               <StructuredPayload a:id="SP1" xmlns:a="http://ulex.gov/library/2.0">
+                  <StructuredPayloadMetadata>
+                     <CommunityURI>http://somewhere.gov/new-community</CommunityURI>
+                     <CommunityDescriptionText>New Community</CommunityDescriptionText>
+                     <CommunityVersionText>1.0</CommunityVersionText>
+                  </StructuredPayloadMetadata>
+                  <StructuredPayloadContent>
+                     <new:IncidentReport xmlns:new="http://somewhere.gov/new-community">
+                        <new:Person s:id="SPPerson1" xmlns:s="http://niem.gov/niem/structures/2.0">
+                           <nc:PersonHairStyleText xmlns:nc="http://niem.gov/niem/niem-core/2.0">pageboy</nc:PersonHairStyleText>
+                        </new:Person>
+                        <j:Incident s:id="SPIncident1" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:s="http://niem.gov/niem/structures/2.0">
+                           <j:IncidentArrestMadeIndicator s:id="SPIncident1Indicator">true</j:IncidentArrestMadeIndicator>
+                        </j:Incident>
+                     </new:IncidentReport>
+                  </StructuredPayloadContent>
+               </StructuredPayload>
+               <AttachmentSummary a:id="PAttachment2" xmlns:a="http://ulex.gov/library/2.0">
+                  <AttachmentDescriptionText>Mug shot for Tommy Lee Jones</AttachmentDescriptionText>
+                  <AttachmentURI>http://www.gtri.org/LEXS/examples/TommyJonesMugshot1.jpg</AttachmentURI>
+                  <AttachmentViewableIndicator>true</AttachmentViewableIndicator>
+               </AttachmentSummary>
+               <Linkages>
+                  <PersonFacialImageConnection xmlns="http://lexs.gov/digest/4.0">
+                     <AttachmentSummaryReference a:validatingObjectReference="PAttachment2" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                     <DigestObjectReference a:validatingObjectReference="Sub2" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                  </PersonFacialImageConnection>
+               </Linkages>
+               <DataSubmitterMetadata>
+                  <SystemIdentifier xmlns="http://lexs.gov/lexs/4.0">
+                     <OriginatingAgencyID>DD1234567</OriginatingAgencyID>
+                     <OrganizationName xmlns="http://niem.gov/niem/niem-core/2.0">Hypothetical Organization D</OrganizationName>
+                     <SystemID>SysD</SystemID>
+                  </SystemIdentifier>
+                  <SystemContact xmlns="http://lexs.gov/lexs/4.0">
+                     <PersonGivenName xmlns="http://niem.gov/niem/niem-core/2.0">Michael</PersonGivenName>
+                     <PersonMiddleName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <PersonSurName xmlns="http://niem.gov/niem/niem-core/2.0">Smith</PersonSurName>
+                     <PersonFullName xsi:nil="true" xmlns="http://niem.gov/niem/niem-core/2.0"/>
+                     <ContactTelephoneNumber xmlns="http://niem.gov/niem/niem-core/2.0">
+                        <NANPTelephoneNumber>
+                           <TelephoneAreaCodeID>303</TelephoneAreaCodeID>
+                           <TelephoneExchangeID>555</TelephoneExchangeID>
+                           <TelephoneLineID>1212</TelephoneLineID>
+                           <TelephoneSuffixID xsi:nil="true"/>
+                        </NANPTelephoneNumber>
+                     </ContactTelephoneNumber>
+                  </SystemContact>
+               </DataSubmitterMetadata>
+               <MatchDetails>
+                  <MatchObjectDetails>
+                     <MatchDigestEntityReference a:validatingObjectReference="ESub2" xmlns:a="http://ulex.gov/library/2.0"/>
+                     <MatchDigestElementReference>
+                        <DigestObjectReference a:validatingObjectReference="ESub2PGN" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                        <QueryMatchText>exact</QueryMatchText>
+                     </MatchDigestElementReference>
+                     <MatchDigestElementReference>
+                        <DigestObjectReference a:validatingObjectReference="ESub2PSN" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                        <QueryMatchText>exact</QueryMatchText>
+                     </MatchDigestElementReference>
+                     <MatchStructuredPayloadElementReference>
+                        <StructuredPayloadObjectReference a:structuredPayloadReference="SP1" a:nonValidatingObjectReference="SPIncident1Indicator" xmlns="http://ulex.gov/library/2.0" xmlns:a="http://ulex.gov/library/2.0"/>
+                        <QueryMatchText>ends-with</QueryMatchText>
+                     </MatchStructuredPayloadElementReference>
+                  </MatchObjectDetails>
+               </MatchDetails>
+            </SearchResultPackage>
+         </SearchResponseMessage>
+      </doSearchResponse>
+
