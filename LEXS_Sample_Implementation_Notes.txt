@@ -110,21 +110,16 @@ http://localhost:8000/Lexs4SearchRetrieve
 
 2.4.1 Mandatory generation of the xsi:nil
 The auto-generated code generates XML that includes xsi:nil="true" 
-for elements that do not contain any value whether an element was 
-included in the orginal XML or not. To eliminate that functionality 
+for elements that do not contain any value whether an element with no value
+was included in the original XML or not. To eliminate that functionality the
 following code has to be added to the generated classes:
 
-DataOwnerIdentifierType.cs
+Example: DataOwnerIdentifierType.cs
 // Note: This is a manual modification to prevent NULL elements from being serialized
 public bool ShouldSerializeOrganizationName()
 {
 	return organizationNameField != null;
 }
-
-2.4.2 ConTesA test
-ConTesA fails generated xml. 
-For details see bug: https://iead.ittl.gtri.org/jira/browse/CONTESA-665 
-
 
 -----------------------------------------------------------------
 3.  REFERENCES
